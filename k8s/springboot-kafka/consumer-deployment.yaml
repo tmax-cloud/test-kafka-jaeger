@@ -1,0 +1,65 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: consumer-service
+  labels:
+    name: consumer-service
+    app: kafka
+spec:
+  ports:
+    - nodePort: 30082
+      port: 8384
+      targetPort: 8384
+      protocol: TCP
+  selector:
+    app: consumer-service
+    app: kafka
+  type: LoadBalancer
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consumer-service
+spec:
+  selector:
+    matchLabels:
+      app: consumer-service
+      app: kafka
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: consumer-service
+        app: kafka
+    spec:
+      containers:
+        - name: consumer-service
+          image: tmaxcloudck/sub-test:1.1
+          ports:
+            - containerPort: 8384
+          env:
+          - name: DB_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: db-conf
+                key: host
+          - name: DB_NAME
+            valueFrom:
+              configMapKeyRef:
+                name: db-conf
+                key: name
+          - name: DB_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: db-credentials
+                key: username
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: db-credentials
+                key: password
+          - name: SERVICE_NAME
+            value: ${SERVICE_NAME}
+          - name: JAEGER_AGENT_HOST_ADDR
+            value: ${JAEGER_AGENT_HOST_ADDR}
