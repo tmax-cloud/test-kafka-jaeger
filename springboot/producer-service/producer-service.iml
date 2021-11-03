@@ -5,8 +5,8 @@
       <configuration>
         <webroots />
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../../producer-service/src/main/java" />
-          <root url="file://$MODULE_DIR$/../../producer-service/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -15,15 +15,15 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
-    <output url="file://$MODULE_DIR$/../../producer-service/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../../producer-service/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../../producer-service">
-      <sourceFolder url="file://$MODULE_DIR$/../../producer-service/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../producer-service/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../../producer-service/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../producer-service/target" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.5.6" level="project" />
@@ -40,7 +40,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.5.6" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.5" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.5" level="project" />
@@ -72,8 +71,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.4.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:2.4.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:9.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.19.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest:2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter:5.7.2" level="project" />
@@ -127,5 +126,73 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-jaeger-cloud-starter:3.1.2" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-jaeger-starter:3.1.2" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-tracer-configuration-starter:0.3.1" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-noop:0.33.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-util:0.33.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-tracerresolver:0.1.8" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-api:0.33.0" level="project" />
+    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-client:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-thrift:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.14.9" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.17.2" level="project" />
+    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-core:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: io.jaegertracing:jaeger-tracerresolver:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-core:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.7" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-concurrent:0.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-web-starter:3.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-web:3.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-web-servlet-filter:0.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-messaging-starter:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-messaging:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-rabbitmq-starter:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-rabbitmq:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-jdbc-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-jdbc:0.2.8" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:common:0.1.4" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-jms-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-jms-spring:0.1.7" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-jms-2:0.1.7" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-jms-common:0.1.7" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-kafka-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-kafka-spring:0.1.12" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-kafka-client:0.1.12" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-feign-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.opentracing:feign-opentracing:0.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.opentracing:feign-hystrix-opentracing:0.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-hystrix-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-reactor-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-reactor:0.1.2" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-rxjava-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-rxjava-1:0.1.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-redis-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-redis-spring-data2:0.1.14" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-redis-common:0.1.14" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-mongo-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-mongo-driver:0.1.5" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-mongo-common:0.1.5" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-websocket-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-zuul-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-spring-cloud-gateway-starter:0.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springdoc:springdoc-openapi-ui:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springdoc:springdoc-openapi-webmvc-core:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springdoc:springdoc-openapi-common:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-models:2.1.6" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-annotations:2.1.6" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-integration:2.1.6" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-core:2.1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.5" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: io.github.classgraph:classgraph:4.8.69" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:swagger-ui:3.38.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:webjars-locator-core:0.46" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.5" level="project" />
   </component>
 </module>
