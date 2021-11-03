@@ -4,7 +4,7 @@
 
 ## Integrate Kafka-SpringBoot with Jaeger
 
-- 라이브러리 추가
+- 스프링 프로젝트내 라이브러리 추가
 
   ```xml
   <dependency>
@@ -14,7 +14,7 @@
   </dependency>
   ```
 
-- ​	외부설정 추가
+- 스프링 프로젝트 외부설정 추가
 
   ```properties
   # application.properties
@@ -63,15 +63,14 @@ $kubectl apply -f k8s/springboot-kafka/.
 ```
 
 5. Confirm that services are registered on Jaeger
-
    - get jaeger-agent ip
 
-     ```
-     kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}'
-     ```
+```
+kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}'
+```
 
-   Jaeger 스크린샷 
+Jaeger 스크린샷 
 
-   <img src="./img/1.png" alt="ex_screenshot" style="zoom:33%;" />
+<img src="./img/1.png" alt="ex_screenshot" style="zoom:33%;" />
 
-   <img src="./img/2.png" alt="ex_screenshot" style="zoom:33%;" />
+<img src="./img/2.png" alt="ex_screenshot" style="zoom:33%;" />
