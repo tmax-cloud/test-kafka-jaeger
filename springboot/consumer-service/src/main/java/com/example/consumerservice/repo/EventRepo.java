@@ -15,7 +15,7 @@ import com.example.consumerservice.model.Event;
 @EnableJpaRepositories
 public interface EventRepo extends JpaRepository<Event, String>{
 
-    @Query("SELECT e from Event e where e.num=:id")
-    public List<Event> findById(@Param("id") float id);
+	@Query("SELECT e from Event e where e.num=:id")
+	public List<Event> findByNum(@Param("id") int id);
 
 }
