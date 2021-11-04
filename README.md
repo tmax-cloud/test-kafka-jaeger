@@ -4,7 +4,7 @@
 
 ## Integrate Kafka-SpringBoot with Jaeger
 
-- 스프링 프로젝트내 라이브러리 추가
+- 스프링 프로젝트 dependency 추가
 
   ```xml
   <dependency>
